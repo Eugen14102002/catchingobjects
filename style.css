@@ -148,12 +148,14 @@ body {
 
 
 div#btnright {
+    cursor: pointer;
     position: absolute;
     right: 0px;
     bottom: 55px;
 }
 
 div#btnleft {
+    cursor: pointer;
     position: absolute;
     left: 0px;
     bottom: 55px;
