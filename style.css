@@ -148,14 +148,12 @@ body {
 
 
 div#btnright {
-    cursor: pointer;
     position: absolute;
     right: 0px;
     bottom: 55px;
 }
 
 div#btnleft {
-    cursor: pointer;
     position: absolute;
     left: 0px;
     bottom: 55px;
@@ -167,6 +165,11 @@ button#right {
 
 button#left,
 button#right {
+    -webkit-user-select: none !important;
+    -webkit-touch-callout: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
     display: none;
     height: 100px;
     width: 100px;
@@ -179,13 +182,14 @@ button#right {
     border: 0px;
 
 }
+
 .column {
     float: left;
     width: 29.33%;
     height: 90px;
     padding: 5px;
     background: url(magickstick.png) !important;
-    background-size:  contain !important;
+    background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
@@ -196,9 +200,11 @@ button#right {
     clear: both;
     display: table;
 }
+
 .egg img {
     width: 100px !important;
 }
+
 @media only screen and (max-width: 1280px) {
 
     button#left,
@@ -211,7 +217,8 @@ button#right {
     }
 
     #basket {
-        height: 60px;
-        width: 40;
+        bottom: 15px;
+        height: 50px;
+        width: 40px;
     }
 }
