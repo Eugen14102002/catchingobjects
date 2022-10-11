@@ -54,14 +54,17 @@ body {
 #egg1 {
 
     left: calc(25% + 8%/2 - 2%/2);
+    /* left: calc(9% + 8%/2 - 2%/2); */
 }
 
 #egg2 {
     left: calc(45% + 8%/2 - 2%/2);
+    /* left: calc(38% + 8%/2 - 2%/2); */
 }
 
 #egg3 {
     left: calc(65% + 8%/2 - 2%/2);
+    /* left: calc(68% + 8%/2 - 2%/2); */
 }
 
 /* #egg4 {
@@ -86,7 +89,7 @@ body {
 }
 
 #bullseye2 {
-    left: calc(42% + 8%/2 - 7%/2);
+    left: calc(45% + 8%/2 - 7%/2);
 }
 
 #bullseye3 {
@@ -217,8 +220,97 @@ button#right {
     }
 
     #basket {
-        bottom: 20px;
-        height: 55px;
+        bottom: 15px;
+        height: 50px;
         width: 40px;
+        position: fixed;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    button#left,
+    button#right {
+        bottom: 40px;
+    }
+
+    #egg1 {
+        left: calc(9% + 8%/2 - 2%/2);
+        margin-top: calc(2%);
+    }
+
+    #egg2 {
+        left: calc(41% + 8%/2 - 2%/2);
+    }
+
+    #egg3 {
+        left: calc(71% + 8%/2 - 2%/2);
+        margin-top: calc(10%);
+    }
+
+    #bullseye1 {
+        left: calc(9% + 8%/2 - 7%/2);
+    }
+
+    #bullseye2 {
+        left: calc(41% + 8%/2 - 7%/2);
+    }
+
+    #bullseye3 {
+        left: calc(71% + 8%/2 - 7%/2);
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+    button#left,
+    button#right {
+        bottom: 70px;
+    }
+
+    #egg1 {
+        left: calc(11% + 8%/2 - 2%/2);
+        margin-top: calc(10%);
+    }
+
+    #egg2 {
+        left: calc(41% + 8%/2 - 2%/2);
+    }
+
+    #egg3 {
+        left: calc(72% + 8%/2 - 2%/2);
+        margin-top: calc(5%);
+    }
+
+    #bullseye1 {
+        left: calc(11% + 8%/2 - 7%/2);
+    }
+
+    #bullseye2 {
+        left: calc(41% + 8%/2 - 7%/2);
+    }
+
+    #bullseye3 {
+        left: calc(72% + 8%/2 - 7%/2);
+    }
+
+    .bullseye {
+        bottom: 20px !important;
+    }
+
+    .egg img {
+        width: 80px !important;
+    }
+
+    #basket {
+        height: 100px;
+        width: 85px;
+        position: absolute;
+        bottom: 5px;
+        background: url('skull.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        z-index: 11;
     }
 }
