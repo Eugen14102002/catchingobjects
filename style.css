@@ -39,14 +39,23 @@ body {
     left: 74%;
 } */
 
+#egg3 {
+    height: 1%;
+    width: 20px !important;
+}
+
+.egg img {
+    margin-left: -15px;
+}
 
 .egg {
+    margin-left: 15px;
     background-image: url('hat2.png');
     position: absolute;
     top: 17%;
-    height: 5%;
-    width: 2%;
-    background-color: #fff;
+    height: 1%;
+    width: 8%;
+    background-color: transparent;
     border-radius: 50%;
     z-index: 99;
 }
@@ -228,6 +237,17 @@ button#right {
 }
 
 @media only screen and (max-width: 600px) {
+    #floor {
+        width: 200%;
+    }
+
+    #egg3 img {
+        margin-left: -200px;
+    }
+
+    #egg3 {
+        margin-left: 206px;
+    }
 
     button#left,
     button#right {
@@ -262,6 +282,17 @@ button#right {
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
+    #floor {
+        width: 200%;
+    }
+
+    #egg3 img {
+        margin-left: -450px !important;
+    }
+
+    #egg3 {
+        margin-left: 456px !important;
+    }
 
     button#left,
     button#right {
@@ -312,5 +343,19 @@ button#right {
         background-repeat: no-repeat;
         text-align: center;
         z-index: 11;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    #floor {
+        width: 200%;
+    }
+
+    #egg3 img {
+        margin-left: -750px !important;
+    }
+
+    #egg3 {
+        margin-left: 756px !important;
     }
 }
