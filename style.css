@@ -3,6 +3,7 @@ body {
     width: 100%;
     margin: 0;
     font-family: sans-serif;
+    touch-action: manipulation !important;
 }
 
 #container {
@@ -52,7 +53,7 @@ body {
     margin-left: 15px;
     background-image: url('hat2.png');
     position: absolute;
-    top: 0%;
+    top: 17%;
     height: 1%;
     width: 8%;
     background-color: transparent;
@@ -61,29 +62,28 @@ body {
 }
 
 #egg1 {
-    margin-top: 1px;
+
     left: calc(25% + 8%/2 - 2%/2);
+    /* left: calc(9% + 8%/2 - 2%/2); */
 }
 
 #egg2 {
-    margin-top: 80px;
     left: calc(45% + 8%/2 - 2%/2);
+    /* left: calc(38% + 8%/2 - 2%/2); */
 }
 
 #egg3 {
-    margin-top: 10px;
     left: calc(65% + 8%/2 - 2%/2);
+    /* left: calc(68% + 8%/2 - 2%/2); */
 }
-
-
 
 .bullseye {
     margin-left: 20px;
     display: none;
     position: absolute;
     bottom: 0px;
-    width: 50px;
-    height: 45px;
+    width: 40px;
+    height: 35px;
     background: url('x.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,18 +91,20 @@ body {
 }
 
 #bullseye1 {
-    left: calc(27% + 8%/2 - 7%/2);
+    left: calc(22% + 8%/2 - 7%/2);
 }
 
 #bullseye2 {
-    left: calc(48% + 8%/2 - 7%/2);
+    left: calc(45% + 8%/2 - 7%/2);
 }
 
 #bullseye3 {
-    left: calc(68% + 8%/2 - 7%/2);
+    left: calc(62% + 8%/2 - 7%/2);
 }
 
-
+/* #bullseye4 {
+    left: calc(75% + 8%/2 - 7%/2);
+} */
 
 #floor {
     position: absolute;
@@ -260,7 +262,7 @@ button#right {
 
     #egg3 {
         left: calc(71% + 8%/2 - 2%/2);
-        margin-top: calc(10%);
+        /* margin-top: calc(10%); */
     }
 
     #bullseye1 {
@@ -296,7 +298,8 @@ button#right {
 
     #egg1 {
         left: calc(11% + 8%/2 - 2%/2);
-        margin-top: calc(10%);
+        margin-top: calc(2%);
+        /* margin-top: calc(10%); */
     }
 
     #egg2 {
@@ -305,7 +308,7 @@ button#right {
 
     #egg3 {
         left: calc(72% + 8%/2 - 2%/2);
-        margin-top: calc(5%);
+        /* margin-top: calc(5%); */
     }
 
     #bullseye1 {
